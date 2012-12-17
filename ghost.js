@@ -31,6 +31,11 @@ function evaluatePage(first_load, cache) {
     }
 }
 
+/**
+ * Opens the specified URL, evaluates the page, then outputs the result of the
+ * user-defined test to the console (which is in turn read as an output buffer
+ * via Node).
+ */
 function load() {
     page.open(url, function() {
         var test_passed = page.evaluate(evaluatePage, first_load, cache);
