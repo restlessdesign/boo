@@ -2,7 +2,11 @@
     require, phantom
 */
 
+// Constants _________________________________________________________________
+
 var REFRESH_DELAY = 5000;
+
+// Variables _________________________________________________________________
 
 var page = require('webpage').create(),
     url = 'http://www.reddit.com/r/vimeo/new/',
